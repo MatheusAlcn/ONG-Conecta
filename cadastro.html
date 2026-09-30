@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ONG Conecta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo-link" href="index.html">
+                <img src="imagens/logo.png" alt="Logo da ONG Conecta">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+                Menu
+            </button>
+
+            <nav id="menu-principal" class="menu" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="cadastro.html" aria-current="page">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo" class="grid-12">
+
+        <section class="hero">
+            <h1>Cadastro</h1>
+
+            <p>
+                Preencha seus dados para participar das ações da
+                ONG Conecta como voluntário ou doador.
+            </p>
+        </section>
+
+        <section class="bloco form-card">
+            <h2>Seus Dados</h2>
+
+            <div id="mensagem-sucesso" class="alert alert-success" role="alert" hidden>
+                Cadastro realizado com sucesso!
+            </div>
+
+            <form id="form-cadastro">
+                <p class="form-nota">Campos com * são obrigatórios.</p>
+
+                <div class="form-grid">
+
+                    <div class="campo campo-full">
+                        <label for="nome">Nome completo *</label>
+                        <input id="nome" name="nome" type="text" placeholder=" " required minlength="3" autocomplete="name">
+                        <span class="erro">Digite seu nome completo (mínimo 3 letras).</span>
+                        <span class="ok">Tudo certo!</span>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail *</label>
+                        <input id="email" name="email" type="email" placeholder=" " required autocomplete="email">
+                        <span class="erro">Digite um e-mail válido, como nome@email.com.</span>
+                        <span class="ok">Tudo certo!</span>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone *</label>
+                        <input id="telefone" name="telefone" type="tel" placeholder=" " required
+                               pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" autocomplete="tel">
+                        <span class="erro">Use o formato (11) 91234-5678.</span>
+                        <span class="ok">Tudo certo!</span>
+                    </div>
+
+                    <div class="campo campo-full">
+                        <label for="interesse">Como deseja participar? *</label>
+                        <select id="interesse" name="interesse" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="voluntariado">Voluntariado</option>
+                            <option value="doacao">Doação</option>
+                            <option value="educacao">Educação</option>
+                        </select>
+                    </div>
+
+                    <div class="campo campo-full">
+                        <label for="mensagem">Mensagem (opcional)</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder=" "></textarea>
+                    </div>
+
+                    <div class="campo-check campo-full">
+                        <input id="aceite" name="aceite" type="checkbox" required>
+                        <label for="aceite">Aceito receber informações sobre as ações da ONG Conecta. *</label>
+                    </div>
+
+                </div>
+
+                <div class="form-acoes">
+                    <button class="btn btn-primary" type="submit">Enviar cadastro</button>
+                    <button class="btn btn-secondary" type="reset">Limpar campos</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="bloco aside-info">
+            <h2>Por que se cadastrar?</h2>
+
+            <p>
+                Com o cadastro, você recebe novidades sobre os projetos
+                e oportunidades de voluntariado.
+            </p>
+
+            <div class="badges">
+                <span class="badge badge-voluntariado">Voluntariado</span>
+                <span class="badge badge-doacao">Doação</span>
+                <span class="badge badge-educacao">Educação</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 ONG Conecta. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

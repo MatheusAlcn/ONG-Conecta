@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Sociais - ONG Conecta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo-link" href="index.html">
+                <img src="imagens/logo.png" alt="Logo da ONG Conecta">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+                Menu
+            </button>
+
+            <nav id="menu-principal" class="menu" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="projetos.html" aria-current="page">Projetos</a>
+                <a href="cadastro.html">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo" class="grid-12">
+
+        <section class="hero">
+            <h1>Projetos Sociais</h1>
+
+            <p>
+                Conheça as iniciativas da ONG Conecta e descubra
+                como participar das nossas ações sociais.
+            </p>
+        </section>
+
+        <section class="secao-projetos">
+            <h2>Nossos Projetos</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Ação Comunitária</h3>
+
+                    <p>
+                        Projeto voltado ao apoio de comunidades por meio
+                        de ações solidárias e distribuição de recursos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Educação e Inclusão</h3>
+
+                    <p>
+                        Iniciativas que buscam ampliar o acesso à educação
+                        e promover a inclusão social.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="bloco">
+            <h2>Doações</h2>
+
+            <p>
+                As doações contribuem para a manutenção dos projetos
+                e permitem ampliar o atendimento às comunidades.
+            </p>
+        </section>
+
+        <section class="bloco">
+            <h2>Voluntariado</h2>
+
+            <p>
+                Pessoas interessadas podem participar das atividades
+                da ONG e colaborar diretamente com nossos projetos.
+            </p>
+        </section>
+
+        <section class="bloco">
+            <h2>Como Participar</h2>
+
+            <p>
+                Para demonstrar interesse em contribuir, acesse a
+                página de cadastro e preencha seus dados.
+            </p>
+        </section>
+
+        <section class="feedback">
+            <h2>Componentes de Feedback</h2>
+
+            <div class="badges">
+                <span class="badge badge-voluntariado">Voluntariado</span>
+                <span class="badge badge-doacao">Doação</span>
+                <span class="badge badge-educacao">Educação</span>
+            </div>
+
+            <div class="alert alert-success" role="alert">
+                Cadastro realizado com sucesso!
+            </div>
+
+            <div class="toast" role="status">
+                Nova oportunidade de voluntariado disponível.
+            </div>
+
+            <button class="btn btn-primary btn-modal" type="button" aria-haspopup="dialog">
+                Saiba mais sobre o projeto
+            </button>
+
+            <dialog class="modal" aria-labelledby="modal-titulo">
+                <div class="modal-content">
+
+                    <button class="modal-close" type="button" aria-label="Fechar">
+                        &times;
+                    </button>
+
+                    <h3 id="modal-titulo">Projeto Ação Comunitária</h3>
+
+                    <p>
+                        Este projeto busca apoiar comunidades por meio
+                        de ações solidárias e distribuição de recursos.
+                    </p>
+
+                    <button class="btn btn-secondary modal-fechar-texto" type="button">
+                        Fechar
+                    </button>
+
+                </div>
+            </dialog>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 ONG Conecta. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
